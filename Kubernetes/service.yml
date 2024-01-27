@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: App-Deploy
+  name: app-deploy
   labels:
-    app: App-Deploy
+    app: app-deploy
 spec:
   type: LoadBalancer
   ports:
   - port: 80
     targetPort: 3000
   selector:
-    app: App-Deploy
+    app: app-deploy
